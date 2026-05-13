@@ -24,7 +24,7 @@ Content-Type: application/json
 ###
 
 ### Actualizar matrícula
-PUT {{baseUrl}}/api/tuitions/1
+PUT {{baseUrl}}/api/tuitions/21
 Content-Type: application/json
 
 {
@@ -37,4 +37,4 @@ Content-Type: application/json
 ###
 
 ### Eliminar matrícula
-DELETE {{baseUrl}}/api/tuitions/1
+DELETE {{baseUrl}}/api/tuitions/21
