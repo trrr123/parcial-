@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:3001
+
+### Obtener todos los carros
+GET {{baseUrl}}/api/cars
+
+###
+
+### Obtener carro por ID
+GET {{baseUrl}}/api/cars/1
+
+###
+
+### Crear carro
+POST {{baseUrl}}/api/cars
+Content-Type: application/json
+
+{
+  "marca": "Toyota",
+  "clase": "SUV",
+  "modelo": "2024",
+  "cilindraje": 2000,
+  "capacidad": 5
+}
+
+###
+
+### Actualizar carro
+PUT {{baseUrl}}/api/cars/1
+Content-Type: application/json
+
+{
+  "marca": "Chevrolet",
+  "clase": "Sedán",
+  "modelo": "2023",
+  "cilindraje": 1600,
+  "capacidad": 4
+}
+
+###
+
+### Eliminar carro
+DELETE {{baseUrl}}/api/cars/1
