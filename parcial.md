@@ -120,6 +120,7 @@ Una vez creadas las tablas físicamente se verificó en DBeaver que las tablas `
 
 ![dbeaver_cars](./imagenes/sereflejaendbeaver1.png)
 ![dbeaver_tuition](./imagenes/sereflejaendveaber2.png)
+![diagrama](./imagenes/diagrama.png)
 
 ---
 
@@ -265,3 +266,21 @@ Algunos de los prompts utilizados fueron:
 - *"Teniendo en cuenta el código que te mandé, crea el archivo markdown de documentación siguiendo el ciclo: BD, modelos, controladores, rutas, index y config, creación de tabla física, verificación en DBeaver, faker y pruebas HTTP."*
 
 La IA adaptó la arquitectura existente a los nuevos paráméros, pero la verificación, pruebas en DBeaver y corrección de errores fueron realizadas de forma manual.
+
+### Capturas de la IA generando el código
+
+#### IA generando package.json
+![ia_packaje_json](./imagenes/iapackajejson.png)
+
+#### IA generando .env
+![ia_env](./imagenes/iaenv.png)
+
+#### IA generando db.ts
+![ia_db_ts](./imagenes/iadbts.png)
+
+#### IA generando modelo Car
+![ia_car_model](./imagenes/iacarmodel.png)
+
+#### IA generando modelo Tuition
+![ia_tuition_model](./imagenes/iatututionmodel.png)
+entre otros estos fueron los apoyos que tuve de la i problemas generados en los mismo codigos o errores pequeños o incluso redundancias fueron resueltos a mano 
