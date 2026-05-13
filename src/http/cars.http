@@ -39,4 +39,4 @@ Content-Type: application/json
 ###
 
 ### Eliminar carro
-DELETE {{baseUrl}}/api/cars/1
+DELETE {{baseUrl}}/api/cars/21
