@@ -247,3 +247,21 @@ Se realizó una petición DELETE a `/api/tuitions/1` y se eliminó el registro d
 Se verificó en DBeaver que la matrícula fue eliminada correctamente de la tabla tuition.
 
 ![tuition_delete_dbeaver](./imagenes/deletedbeavertuition.png)
+
+## 11. Uso de IA
+
+Durante el desarrollo de este parcial se utilizó inteligencia artificial (Claude de Anthropic) como herramienta de apoyo. La IA tomó el proyecto anterior `app-colegio` y lo adaptó a los nuevos requerimientos del parcial.
+
+Algunos de los prompts utilizados fueron:
+
+- *"Teniendo en cuenta el código que te mandé del proyecto app-colegio, adáptalo para trabajar con dos nuevas tablas llamadas cars y tuition. Cars tiene los campos id, marca, clase, modelo, cilindraje y capacidad. Tuition tiene id, date, ciudad, pago y car_id como llave foránea. La relación es de 1 a N desde cars hacia tuition."*
+- *"Teniendo en cuenta el código que te mandé, crea el modelo de Sequelize para la tabla cars con validaciones en cada campo usando notNull, notEmpty e isInt donde corresponda."*
+- *"Teniendo en cuenta el código que te mandé, crea el modelo de Sequelize para la tabla tuition con validaciones y define la relación hasMany y belongsTo con el modelo Car."*
+- *"Teniendo en cuenta el código que te mandé, genera el controlador completo para cars con los métodos getCars, getCarById, createCar, updateCar y deleteCar manejando errores con try catch."*
+- *"Teniendo en cuenta el código que te mandé, genera el controlador completo para tuition siguiendo el mismo patrón del controlador de cars."*
+- *"Teniendo en cuenta el código que te mandé, crea el archivo config con Express registrando las rutas de cars y tuition, los middlewares de morgan, cors y express.json, y la conexión a la base de datos con Sequelize sync."*
+- *"Teniendo en cuenta el código que te mandé, crea el script faker que inserte 20 registros en la tabla cars con datos aleatorios y luego 20 registros en tuition referenciando los carros creados."*
+- *"Teniendo en cuenta el código que te mandé, genera los archivos HTTP para probar el CRUD completo de cars y tuition con los métodos GET, POST, PUT y DELETE."*
+- *"Teniendo en cuenta el código que te mandé, crea el archivo markdown de documentación siguiendo el ciclo: BD, modelos, controladores, rutas, index y config, creación de tabla física, verificación en DBeaver, faker y pruebas HTTP."*
+
+La IA adaptó la arquitectura existente a los nuevos paráméros, pero la verificación, pruebas en DBeaver y corrección de errores fueron realizadas de forma manual.
