@@ -4,7 +4,7 @@ import { Car } from "./Car";
 
 export interface TuitionI {
   id?: number;
-  date: Date;
+  date: string;
   ciudad: string;
   pago: number;
   car_id: number;
@@ -12,7 +12,7 @@ export interface TuitionI {
 
 export class Tuition extends Model<TuitionI> implements TuitionI {
   public id!: number;
-  public date!: Date;
+  public date!: string;
   public ciudad!: string;
   public pago!: number;
   public car_id!: number;
