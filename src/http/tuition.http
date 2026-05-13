@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:3000
+
+### Obtener todas las matrículas
+GET {{baseUrl}}/api/tuitions
+
+###
+
+### Obtener matrícula por ID
+GET {{baseUrl}}/api/tuitions/1
+
+###
+
+### Crear matrícula
+POST {{baseUrl}}/api/tuitions
+Content-Type: application/json
+
+{
+  "date": "2025-01-15",
+  "ciudad": "Bogotá",
+  "pago": 1500000,
+  "car_id": 1
+}
+
+###
+
+### Actualizar matrícula
+PUT {{baseUrl}}/api/tuitions/1
+Content-Type: application/json
+
+{
+  "date": "2025-02-20",
+  "ciudad": "Medellín",
+  "pago": 2000000,
+  "car_id": 2
+}
+
+###
+
+### Eliminar matrícula
+DELETE {{baseUrl}}/api/tuitions/1
